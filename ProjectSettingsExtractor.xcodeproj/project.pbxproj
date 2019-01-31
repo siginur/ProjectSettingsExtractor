@@ -10,6 +10,25 @@
 		B384334E220231C7004545AC /* ProjectSettingsExtractor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3843344220231C7004545AC /* ProjectSettingsExtractor.framework */; };
 		B3843353220231C7004545AC /* ProjectSettingsExtractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3843352220231C7004545AC /* ProjectSettingsExtractorTests.swift */; };
 		B3843355220231C7004545AC /* ProjectSettingsExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = B3843347220231C7004545AC /* ProjectSettingsExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B384335F220231FA004545AC /* XCConfigurationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B384335E220231FA004545AC /* XCConfigurationList.swift */; };
+		B384336122023215004545AC /* XCBuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B384336022023215004545AC /* XCBuildConfiguration.swift */; };
+		B38433632202601D004545AC /* PBXProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38433622202601D004545AC /* PBXProject.swift */; };
+		B38433652202663D004545AC /* PBXGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38433642202663D004545AC /* PBXGroup.swift */; };
+		B3843367220267D8004545AC /* PBXFileReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3843366220267D7004545AC /* PBXFileReference.swift */; };
+		B384336922026802004545AC /* PBXBuildFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B384336822026802004545AC /* PBXBuildFile.swift */; };
+		B384336B2202C637004545AC /* XcodeProjectSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B384336A2202C637004545AC /* XcodeProjectSettings.swift */; };
+		B384336D2202C70F004545AC /* PBXObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B384336C2202C70F004545AC /* PBXObject.swift */; };
+		B384336F2202C9FA004545AC /* IsaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B384336E2202C9FA004545AC /* IsaType.swift */; };
+		B38433732202DE43004545AC /* PBXFrameworksBuildPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38433722202DE43004545AC /* PBXFrameworksBuildPhase.swift */; };
+		B38433772202E14B004545AC /* PBXObjectMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38433762202E14B004545AC /* PBXObjectMap.swift */; };
+		B38433792202E343004545AC /* PBXHeadersBuildPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38433782202E343004545AC /* PBXHeadersBuildPhase.swift */; };
+		B384337B2202E39A004545AC /* PBXResourcesBuildPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B384337A2202E39A004545AC /* PBXResourcesBuildPhase.swift */; };
+		B384337D2202E3E3004545AC /* PBXSourcesBuildPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B384337C2202E3E3004545AC /* PBXSourcesBuildPhase.swift */; };
+		B384337F2202E40A004545AC /* PBXShellScriptBuildPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B384337E2202E40A004545AC /* PBXShellScriptBuildPhase.swift */; };
+		B38433812202E59E004545AC /* PBXBuildPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38433802202E59E004545AC /* PBXBuildPhase.swift */; };
+		B38433842202EF9E004545AC /* PBXNativeTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38433832202EF9E004545AC /* PBXNativeTarget.swift */; };
+		B38433862202F3D6004545AC /* PBXTargetDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38433852202F3D6004545AC /* PBXTargetDependency.swift */; };
+		B38433882202F532004545AC /* PBXContainerItemProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38433872202F532004545AC /* PBXContainerItemProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +48,25 @@
 		B384334D220231C7004545AC /* ProjectSettingsExtractorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectSettingsExtractorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3843352220231C7004545AC /* ProjectSettingsExtractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettingsExtractorTests.swift; sourceTree = "<group>"; };
 		B3843354220231C7004545AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B384335E220231FA004545AC /* XCConfigurationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCConfigurationList.swift; sourceTree = "<group>"; };
+		B384336022023215004545AC /* XCBuildConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCBuildConfiguration.swift; sourceTree = "<group>"; };
+		B38433622202601D004545AC /* PBXProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXProject.swift; sourceTree = "<group>"; };
+		B38433642202663D004545AC /* PBXGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXGroup.swift; sourceTree = "<group>"; };
+		B3843366220267D7004545AC /* PBXFileReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXFileReference.swift; sourceTree = "<group>"; };
+		B384336822026802004545AC /* PBXBuildFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXBuildFile.swift; sourceTree = "<group>"; };
+		B384336A2202C637004545AC /* XcodeProjectSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeProjectSettings.swift; sourceTree = "<group>"; };
+		B384336C2202C70F004545AC /* PBXObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXObject.swift; sourceTree = "<group>"; };
+		B384336E2202C9FA004545AC /* IsaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsaType.swift; sourceTree = "<group>"; };
+		B38433722202DE43004545AC /* PBXFrameworksBuildPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXFrameworksBuildPhase.swift; sourceTree = "<group>"; };
+		B38433762202E14B004545AC /* PBXObjectMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXObjectMap.swift; sourceTree = "<group>"; };
+		B38433782202E343004545AC /* PBXHeadersBuildPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXHeadersBuildPhase.swift; sourceTree = "<group>"; };
+		B384337A2202E39A004545AC /* PBXResourcesBuildPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXResourcesBuildPhase.swift; sourceTree = "<group>"; };
+		B384337C2202E3E3004545AC /* PBXSourcesBuildPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXSourcesBuildPhase.swift; sourceTree = "<group>"; };
+		B384337E2202E40A004545AC /* PBXShellScriptBuildPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXShellScriptBuildPhase.swift; sourceTree = "<group>"; };
+		B38433802202E59E004545AC /* PBXBuildPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXBuildPhase.swift; sourceTree = "<group>"; };
+		B38433832202EF9E004545AC /* PBXNativeTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXNativeTarget.swift; sourceTree = "<group>"; };
+		B38433852202F3D6004545AC /* PBXTargetDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXTargetDependency.swift; sourceTree = "<group>"; };
+		B38433872202F532004545AC /* PBXContainerItemProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXContainerItemProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +111,12 @@
 			children = (
 				B3843347220231C7004545AC /* ProjectSettingsExtractor.h */,
 				B3843348220231C7004545AC /* Info.plist */,
+				B38433742202DE53004545AC /* PBX Tree */,
+				B38433712202DE32004545AC /* PBX Build phases */,
+				B38433892202F9ED004545AC /* PBX Configurations */,
+				B38433822202EACE004545AC /* XC Configurations */,
+				B38433752202E12F004545AC /* Models */,
+				B384336A2202C637004545AC /* XcodeProjectSettings.swift */,
 			);
 			path = ProjectSettingsExtractor;
 			sourceTree = "<group>";
@@ -84,6 +128,59 @@
 				B3843354220231C7004545AC /* Info.plist */,
 			);
 			path = ProjectSettingsExtractorTests;
+			sourceTree = "<group>";
+		};
+		B38433712202DE32004545AC /* PBX Build phases */ = {
+			isa = PBXGroup;
+			children = (
+				B38433802202E59E004545AC /* PBXBuildPhase.swift */,
+				B38433722202DE43004545AC /* PBXFrameworksBuildPhase.swift */,
+				B38433782202E343004545AC /* PBXHeadersBuildPhase.swift */,
+				B384337A2202E39A004545AC /* PBXResourcesBuildPhase.swift */,
+				B384337C2202E3E3004545AC /* PBXSourcesBuildPhase.swift */,
+				B384337E2202E40A004545AC /* PBXShellScriptBuildPhase.swift */,
+			);
+			path = "PBX Build phases";
+			sourceTree = "<group>";
+		};
+		B38433742202DE53004545AC /* PBX Tree */ = {
+			isa = PBXGroup;
+			children = (
+				B38433642202663D004545AC /* PBXGroup.swift */,
+				B3843366220267D7004545AC /* PBXFileReference.swift */,
+				B384336822026802004545AC /* PBXBuildFile.swift */,
+			);
+			path = "PBX Tree";
+			sourceTree = "<group>";
+		};
+		B38433752202E12F004545AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B384336E2202C9FA004545AC /* IsaType.swift */,
+				B38433762202E14B004545AC /* PBXObjectMap.swift */,
+				B384336C2202C70F004545AC /* PBXObject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B38433822202EACE004545AC /* XC Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				B384336022023215004545AC /* XCBuildConfiguration.swift */,
+				B384335E220231FA004545AC /* XCConfigurationList.swift */,
+			);
+			path = "XC Configurations";
+			sourceTree = "<group>";
+		};
+		B38433892202F9ED004545AC /* PBX Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				B38433622202601D004545AC /* PBXProject.swift */,
+				B38433872202F532004545AC /* PBXContainerItemProxy.swift */,
+				B38433832202EF9E004545AC /* PBXNativeTarget.swift */,
+				B38433852202F3D6004545AC /* PBXTargetDependency.swift */,
+			);
+			path = "PBX Configurations";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +245,7 @@
 				TargetAttributes = {
 					B3843343220231C7004545AC = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					B384334C220231C7004545AC = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +292,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38433882202F532004545AC /* PBXContainerItemProxy.swift in Sources */,
+				B38433792202E343004545AC /* PBXHeadersBuildPhase.swift in Sources */,
+				B384336F2202C9FA004545AC /* IsaType.swift in Sources */,
+				B384336B2202C637004545AC /* XcodeProjectSettings.swift in Sources */,
+				B38433772202E14B004545AC /* PBXObjectMap.swift in Sources */,
+				B38433842202EF9E004545AC /* PBXNativeTarget.swift in Sources */,
+				B38433652202663D004545AC /* PBXGroup.swift in Sources */,
+				B384336922026802004545AC /* PBXBuildFile.swift in Sources */,
+				B384337B2202E39A004545AC /* PBXResourcesBuildPhase.swift in Sources */,
+				B384336D2202C70F004545AC /* PBXObject.swift in Sources */,
+				B384337D2202E3E3004545AC /* PBXSourcesBuildPhase.swift in Sources */,
+				B38433862202F3D6004545AC /* PBXTargetDependency.swift in Sources */,
+				B38433812202E59E004545AC /* PBXBuildPhase.swift in Sources */,
+				B3843367220267D8004545AC /* PBXFileReference.swift in Sources */,
+				B38433732202DE43004545AC /* PBXFrameworksBuildPhase.swift in Sources */,
+				B38433632202601D004545AC /* PBXProject.swift in Sources */,
+				B384337F2202E40A004545AC /* PBXShellScriptBuildPhase.swift in Sources */,
+				B384336122023215004545AC /* XCBuildConfiguration.swift in Sources */,
+				B384335F220231FA004545AC /* XCConfigurationList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +457,7 @@
 		B3843359220231C7004545AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -359,6 +477,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.merkova.ProjectSettingsExtractor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -366,6 +485,7 @@
 		B384335A220231C7004545AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -392,6 +512,7 @@
 		B384335C220231C7004545AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = HU4P847GG9;
@@ -410,6 +531,7 @@
 		B384335D220231C7004545AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = HU4P847GG9;

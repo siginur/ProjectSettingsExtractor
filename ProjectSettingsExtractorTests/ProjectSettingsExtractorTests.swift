@@ -20,8 +20,7 @@ class ProjectSettingsExtractorTests: XCTestCase {
     }
 
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        _ = XcodeProjectSettings.init(xcodeProjectFile: URL(fileURLWithPath: "/Users/siginur/Developing/_libraries/SMDateTime/SMDateTime/SMDateTime.xcodeproj"))
     }
 
     func testPerformanceExample() {
