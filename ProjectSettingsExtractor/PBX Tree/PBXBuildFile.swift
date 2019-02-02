@@ -8,12 +8,12 @@
 
 public class PBXBuildFile: PBXObject {
 
-	public let fileRef: PBXFileReference
+	public let fileRef: PBXTreeElement
 	public let settings: [String : Any]?
 
 	init?(objects: PBXObjectMap, data: PBXObject) {
 		let properties = data.properties
-		guard let objectId = properties["fileRef"] as? String, let fileRef = objects[objectId] as? PBXFileReference else {
+		guard let objectId = properties["fileRef"] as? String, let fileRef = objects[objectId] as? PBXTreeElement else {
 			return nil
 		}
 		self.fileRef = fileRef

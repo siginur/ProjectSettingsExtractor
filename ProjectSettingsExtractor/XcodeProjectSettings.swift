@@ -8,7 +8,7 @@
 
 internal typealias Properties = [String : Any]
 
-private let availableXcodeVersions = ["Xcode 9.3"]
+private let availableXcodeVersions = ["Xcode 3.2", "Xcode 6.3", "Xcode 8.0", "Xcode 9.3", "Xcode 10.0"]
 
 public class XcodeProjectSettings {
 	
@@ -24,9 +24,9 @@ public class XcodeProjectSettings {
 			let propertyList = try? PropertyListSerialization.propertyList(from: data, options: .mutableContainers, format: nil),
 			let properties = propertyList as? Properties,
 			let objects = properties["objects"] as? [String : Properties],
-			let archiveVersion = properties["objects"] as? String,
+			let archiveVersion = properties["archiveVersion"] as? String,
 			let objectVersion = properties["objectVersion"] as? String,
-			let classes = properties["objectVersion"] as? Properties,
+			let classes = properties["classes"] as? Properties,
 			let rootObjectId = properties["rootObject"] as? String else {
 				return nil
 		}
@@ -53,8 +53,8 @@ public class XcodeProjectSettings {
 	
 }
 
-private func buildObjectsMap(_ objects: [String : Properties]) -> PBXObjectMap? {
-	var src = objects.compactMap { PBXObject(id: $0, properties: $1) }
+private func buildObjectsMap(_ propertiesMap: [String : Properties]) -> PBXObjectMap? {
+	var src = propertiesMap.compactMap { PBXObject(id: $0, properties: $1) }
 	var objects = PBXObjectMap()
 	var skipped = [PBXObject]()
 
@@ -64,6 +64,12 @@ private func buildObjectsMap(_ objects: [String : Properties]) -> PBXObjectMap? 
 		objects[data.id] = PBXFileReference(data: data)
 	}
 	
+	// PBXVariantGroup
+	let pbxVariantGroup = extractObjects(from: &src, isa: .PBXVariantGroup)
+	for data in pbxVariantGroup {
+		objects[data.id] = PBXVariantGroup(objects: objects, data: data)
+	}
+
 	// PBXBuildFile
 	let pbxBuildFileList = extractObjects(from: &src, isa: .PBXBuildFile)
 	for data in pbxBuildFileList {
@@ -146,7 +152,7 @@ private func buildObjectsMap(_ objects: [String : Properties]) -> PBXObjectMap? 
 	// XCBuildConfiguration
 	let xcBuildConfiguration = extractObjects(from: &src, isa: .XCBuildConfiguration)
 	for data in xcBuildConfiguration {
-		objects[data.id] = XCBuildConfiguration(data: data)
+		objects[data.id] = XCBuildConfiguration(objects: objects, data: data)
 	}
 	
 	// XCConfigurationList
@@ -171,6 +177,11 @@ private func buildObjectsMap(_ objects: [String : Properties]) -> PBXObjectMap? 
 	let pbxNativeTarget = extractObjects(from: &src, isa: .PBXNativeTarget)
 	for data in pbxNativeTarget {
 		objects[data.id] = PBXNativeTarget(objects: objects, data: data)
+	}
+	
+	// PBXProject
+	if let pbxProject = extractObjects(from: &src, isa: .PBXProject).first {
+		objects[pbxProject.id] = pbxProject
 	}
 	
 	return objects

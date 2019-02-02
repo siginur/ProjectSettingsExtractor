@@ -6,12 +6,10 @@
 //  Copyright © 2019 merkova. All rights reserved.
 //
 
-public class PBXGroup: PBXObject {
+public class PBXGroup: PBXTreeElement {
 
 	public let children: [PBXObject]?
 	public let path: String?
-	public let name: String?
-	public let sourceTree: String?
 	
 	init?(objects: PBXObjectMap, data: PBXObject) {
 		let properties = data.properties
@@ -21,9 +19,7 @@ public class PBXGroup: PBXObject {
 			children = nil
 		}
 		path = properties["path"] as? String
-		name = properties["name"] as? String
-		sourceTree = properties["sourceTree"] as? String
-		super.init(data)
+		super.init(data: data)
 	}
 	
 }

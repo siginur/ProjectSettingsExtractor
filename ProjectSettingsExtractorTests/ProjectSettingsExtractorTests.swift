@@ -20,8 +20,16 @@ class ProjectSettingsExtractorTests: XCTestCase {
     }
 
     func testExample() {
-        _ = XcodeProjectSettings.init(xcodeProjectFile: URL(fileURLWithPath: "/Users/siginur/Developing/_libraries/SMDateTime/SMDateTime/SMDateTime.xcodeproj"))
-    }
+//		let settings = XcodeProjectSettings.init(xcodeProjectFile: URL(fileURLWithPath: "/Users/siginur/Developing/_libraries/SMDateTime/SMDateTime/SMDateTime.xcodeproj"))
+//		let settings = XcodeProjectSettings.init(xcodeProjectFile: URL(fileURLWithPath: "/Users/siginur/Developing/_Pointer/workCalc/workCalc.xcodeproj"))
+		let settings = XcodeProjectSettings.init(xcodeProjectFile: URL(fileURLWithPath: "/Users/siginur/Developing/_Pointer/HeartWorks/HeartM/HeartWorks.xcodeproj"))
+		XCTAssertNotNil(settings)
+		print(settings?.pbxProject.targets?.compactMap{
+			$0.buildConfigurationList?.buildConfigurations?.compactMap {
+				$0.buildSettings?.productBudleIdentifier
+			}
+		})
+	}
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

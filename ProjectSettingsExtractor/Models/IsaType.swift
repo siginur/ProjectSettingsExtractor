@@ -10,6 +10,7 @@ public enum IsaType: Hashable {
 	case PBXBuildFile
 	case PBXContainerItemProxy
 	case PBXFileReference
+	case PBXVariantGroup
 	case PBXFrameworksBuildPhase
 	case PBXGroup
 	case PBXHeadersBuildPhase
@@ -28,6 +29,7 @@ public enum IsaType: Hashable {
 		case "PBXBuildFile": self = .PBXBuildFile
 		case "PBXContainerItemProxy": self = .PBXContainerItemProxy
 		case "PBXFileReference": self = .PBXFileReference
+		case "PBXVariantGroup": self = .PBXVariantGroup
 		case "PBXFrameworksBuildPhase": self = .PBXFrameworksBuildPhase
 		case "PBXGroup": self = .PBXGroup
 		case "PBXHeadersBuildPhase": self = .PBXHeadersBuildPhase

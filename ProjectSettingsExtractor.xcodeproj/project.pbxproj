@@ -29,6 +29,8 @@
 		B38433842202EF9E004545AC /* PBXNativeTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38433832202EF9E004545AC /* PBXNativeTarget.swift */; };
 		B38433862202F3D6004545AC /* PBXTargetDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38433852202F3D6004545AC /* PBXTargetDependency.swift */; };
 		B38433882202F532004545AC /* PBXContainerItemProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38433872202F532004545AC /* PBXContainerItemProxy.swift */; };
+		B384338B2204340E004545AC /* PBXVariantGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B384338A2204340E004545AC /* PBXVariantGroup.swift */; };
+		B384338D220599F4004545AC /* PBXTreeElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B384338C220599F4004545AC /* PBXTreeElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		B38433832202EF9E004545AC /* PBXNativeTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXNativeTarget.swift; sourceTree = "<group>"; };
 		B38433852202F3D6004545AC /* PBXTargetDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXTargetDependency.swift; sourceTree = "<group>"; };
 		B38433872202F532004545AC /* PBXContainerItemProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXContainerItemProxy.swift; sourceTree = "<group>"; };
+		B384338A2204340E004545AC /* PBXVariantGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXVariantGroup.swift; sourceTree = "<group>"; };
+		B384338C220599F4004545AC /* PBXTreeElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBXTreeElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,9 +150,11 @@
 		B38433742202DE53004545AC /* PBX Tree */ = {
 			isa = PBXGroup;
 			children = (
+				B384336822026802004545AC /* PBXBuildFile.swift */,
 				B38433642202663D004545AC /* PBXGroup.swift */,
 				B3843366220267D7004545AC /* PBXFileReference.swift */,
-				B384336822026802004545AC /* PBXBuildFile.swift */,
+				B384338A2204340E004545AC /* PBXVariantGroup.swift */,
+				B384338C220599F4004545AC /* PBXTreeElement.swift */,
 			);
 			path = "PBX Tree";
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B384338B2204340E004545AC /* PBXVariantGroup.swift in Sources */,
 				B38433882202F532004545AC /* PBXContainerItemProxy.swift in Sources */,
 				B38433792202E343004545AC /* PBXHeadersBuildPhase.swift in Sources */,
 				B384336F2202C9FA004545AC /* IsaType.swift in Sources */,
@@ -301,6 +308,7 @@
 				B38433652202663D004545AC /* PBXGroup.swift in Sources */,
 				B384336922026802004545AC /* PBXBuildFile.swift in Sources */,
 				B384337B2202E39A004545AC /* PBXResourcesBuildPhase.swift in Sources */,
+				B384338D220599F4004545AC /* PBXTreeElement.swift in Sources */,
 				B384336D2202C70F004545AC /* PBXObject.swift in Sources */,
 				B384337D2202E3E3004545AC /* PBXSourcesBuildPhase.swift in Sources */,
 				B38433862202F3D6004545AC /* PBXTargetDependency.swift in Sources */,

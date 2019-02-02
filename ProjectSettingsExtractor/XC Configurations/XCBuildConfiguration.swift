@@ -8,16 +8,22 @@
 
 public class XCBuildConfiguration: PBXObject {
 
+	public let baseConfigurationReference: PBXFileReference?
 	public let buildSettings: XCBuildSettings?
 	public let name: String?
 
-	public init(data: PBXObject) {
+	init(objects: PBXObjectMap, data: PBXObject) {
 		let properties = data.properties
 		name = properties["name"] as? String
 		if let buildSettings = properties["buildSettings"] as? [String : Any] {
 			self.buildSettings = XCBuildSettings(data: buildSettings)
 		} else {
 			buildSettings = nil
+		}
+		if let objectId = properties["baseConfigurationReference"] as? String, let object = objects[objectId] as? PBXFileReference {
+			self.baseConfigurationReference = object
+		} else {
+			baseConfigurationReference = nil
 		}
 		super.init(data)
 	}
@@ -27,11 +33,13 @@ public class XCBuildConfiguration: PBXObject {
 
 public class XCBuildSettings {
 	
+	public let assetCatalogCompilerAppIconName: String?
 	public let clangEnableModules: String? // YES
 	public let codeSignIdentity: String? // ""
 	public let codeSignStyle: String? // Automic
 	public let definesModule: String? // YES
 	public let developmentTeam: String? // HU4P847GG9
+	public let frameworkSearchPaths: [String]?
 	public let dylibCompatibilityVersion: String? // 1
 	public let dylibCurrentVersion: String? // 1
 	public let dylibInstallNameBase: String? // "@rpath"
@@ -102,12 +110,14 @@ public class XCBuildSettings {
 	public let swiftActiveCompilationConditions: String? // DEBUG;
 	
 	
-	public init(data: [String : Any]) {
+	init(data: [String : Any]) {
+		assetCatalogCompilerAppIconName = data["ASSETCATALOG_COMPILER_APPICON_NAME"] as? String
 		clangEnableModules = data["CLANG_ENABLE_MODULES"] as? String
 		codeSignIdentity = data["CODE_SIGN_IDENTITY"] as? String
 		codeSignStyle = data["CODE_SIGN_STYLE"] as? String
 		definesModule = data["DEFINES_MODULE"] as? String
 		developmentTeam = data["DEVELOPMENT_TEAM"] as? String
+		frameworkSearchPaths = data["FRAMEWORK_SEARCH_PATHS"] as? [String]
 		dylibCompatibilityVersion = data["DYLIB_COMPATIBILITY_VERSION"] as? String
 		dylibCurrentVersion = data["DYLIB_CURRENT_VERSION"] as? String
 		dylibInstallNameBase = data["DYLIB_INSTALL_NAME_BASE"] as? String
