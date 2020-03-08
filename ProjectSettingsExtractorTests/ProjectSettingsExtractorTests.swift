@@ -28,7 +28,7 @@ class ProjectSettingsExtractorTests: XCTestCase {
 			$0.buildConfigurationList?.buildConfigurations?.compactMap {
 				$0.buildSettings?.productBudleIdentifier
 			}
-		})
+		} ?? [])
 	}
 
     func testPerformanceExample() {

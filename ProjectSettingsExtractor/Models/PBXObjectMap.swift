@@ -10,7 +10,7 @@ internal typealias PBXObjectMap = [String : PBXObject]
 
 internal extension Dictionary where Key == String, Value == PBXObject {
 	
-	internal func find(ids: [String]) -> [Value]? {
+	func find(ids: [String]) -> [Value]? {
 		var result = [Value]()
 		for objectId in ids {
 			if let object = self[objectId] {

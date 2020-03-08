@@ -211,6 +211,7 @@
 				B3843340220231C7004545AC /* Sources */,
 				B3843341220231C7004545AC /* Frameworks */,
 				B3843342220231C7004545AC /* Resources */,
+				B3869C832372994F00587917 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -251,10 +252,11 @@
 				TargetAttributes = {
 					B3843343220231C7004545AC = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1100;
 					};
 					B384334C220231C7004545AC = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -264,6 +266,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B384333A220231C7004545AC;
 			productRefGroup = B3843345220231C7004545AC /* Products */;
@@ -292,6 +295,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3869C832372994F00587917 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"$(date +%s)\\n${PRODUCT_BUNDLE_IDENTIFIER}\\n${BUILT_PRODUCTS_DIR}/${EXECUTABLE_NAME}\\n${ARCHS}\" > $TMPDIR/fat-lib-path.txt\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B3843340220231C7004545AC /* Sources */ = {
@@ -482,11 +505,12 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.merkova.ProjectSettingsExtractor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -510,10 +534,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.merkova.ProjectSettingsExtractor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -532,7 +557,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.merkova.ProjectSettingsExtractorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -551,7 +576,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.merkova.ProjectSettingsExtractorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
